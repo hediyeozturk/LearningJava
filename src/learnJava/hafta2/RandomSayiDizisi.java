@@ -25,6 +25,8 @@ public class RandomSayiDizisi {
 		}
 
 		System.out.println("En Büyük Sayý: " + maxSayi);
+		
+		scanner.close();
 
 	}
 
