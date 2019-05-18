@@ -2,8 +2,6 @@ package examples.Metod;
 
 import java.util.Scanner;
 
-import learnJava.hafta1.Carpim;
-
 public class DortIslem {
 
 	public static void main(String[] args) {
