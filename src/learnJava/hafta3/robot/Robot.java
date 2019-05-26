@@ -3,46 +3,35 @@ package learnJava.hafta3.robot;
 import java.awt.Color;
 
 public class Robot {
-	int[] baslangicKonumu = new int[2];
-	int[] mevcutKonum = new int[2];
-	String model;
-	Color color;
-	float height;
+//	int[] baslangicKonumu = new int[2];
+//	int[] mevcutKonum = new int[2];
+	String isim;
+	String renk;
+	int boy;
+	int konum;
 
-	public void Robot() {
-		// TODO Auto-generated method stub
-		baslangicKonumu[0] = 0;
-		baslangicKonumu[1] = 0;
-		mevcutKonum = baslangicKonumu;
-	}
-
-	public void AdimAt(int adim, Yon yon) {
+	public Robot() {
 		
-		if (yon == Yon.Geri && adim > mevcutKonum[0]) {
-			mevcutKonum[0] = 0;
+	}
+
+	void konferansVer(String konusmaMetni) {
+		System.out.println(konusmaMetni);
+	}
+	
+	public void adimAt(EnumYon yon, int adimSayisi) {
+		
+		if (EnumYon.ILERI.equals(yon)) {
+			konum += adimSayisi;
 		} else {
-			switch (yon) {
-			case Ileri:
-				mevcutKonum[0] = mevcutKonum[0] + adim;
-				break;
-			case Geri:
-				mevcutKonum[0] = mevcutKonum[0] - adim;
-				break;
-			}
+			konum -= adimSayisi;
 		}
-		Yazdir(mevcutKonum[0] +","+ mevcutKonum[1]);
 	}
 
-	public void Zipla(int yukseklik) {
-		mevcutKonum[1] = mevcutKonum[1] + yukseklik;
-		Yazdir(mevcutKonum[0] +","+ mevcutKonum[1]);
+	public void kendiniTanit() {
+		System.out.printf("Ýsim = %s, rengim = %s, boyum = %d", isim, renk, boy);
 	}
-
-	public void Konus() {
-		Yazdir("Selam!");
-	}
-
-	static void Yazdir(String value) {
-		System.out.println(value);
+	
+	public int neredesin() {
+		return konum;
 	}
 }
