@@ -15,7 +15,7 @@ public class KullaniciyaSor {
 		
 		switch (secim) {
 		case "1":
-			Aslan aslan=new Aslan();
+			//Aslan aslan=new Aslan();
 			System.out.println("Kürkü var mý?  1 0 ");
 			
 //			boolean kurkuVarMi=scanner.
@@ -31,7 +31,7 @@ public class KullaniciyaSor {
 			System.out.println("Geçersiz bir deðer girdiniz.");
 			break;
 		}
-		
+		scanner.close();
 
 	}
 

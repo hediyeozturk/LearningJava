@@ -1,7 +1,5 @@
 package learnJava.hafta3.robot;
 
-import java.awt.Color;
-
 public class Robot {
 //	int[] baslangicKonumu = new int[2];
 //	int[] mevcutKonum = new int[2];

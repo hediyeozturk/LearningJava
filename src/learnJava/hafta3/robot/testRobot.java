@@ -1,6 +1,5 @@
 package learnJava.hafta3.robot;
 
-import java.awt.Color;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -43,6 +42,8 @@ public class testRobot {
 			neredesin = robot.neredesin();
 			System.out.println(neredesin);
 		}
+		
+		scanner.close();
 	}
 
 	public static EnumYon YonAl() {
